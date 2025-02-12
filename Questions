@@ -1,125 +1,77 @@
-## **Questions for Understanding GEDI Data**
+## **Questions for better understanding GEDI Data**
+Solve these questions for yourself and passing the exam might become easier...
 
-### **Section 2.1: Open a GEDI HDF5 File and Read Metadata**
-1. **What kind of information can be inferred from the GEDI filename?**  
-   *Hint: Look at the breakdown of the filename components.*
-2. **Why do we store GEDI data in the HDF5 format? What are the advantages of using this format over simpler formats like CSV?**  
-3. **What is the purpose of the GEDI L2B dataset, as described in the metadata? How does this purpose relate to ecological research?**  
-4. **Why is metadata important in scientific datasets like GEDI? What could go wrong if metadata were missing or incorrect?**  
+### 3. Visualise a GEDI orbit
 
----
+- How does the spatial distribution of GEDI shots relate to the ISS orbit path? Why do they appear in a narrow strip?
 
-### **Section 2.2: Read SDS Metadata and Subset by Beam**
-5. **What is the difference between a full power beam and a coverage beam? Why might researchers be interested in one over the other?**  
-6. **Why does GEDI use multiple beams instead of just one? How does this help in covering a forested area?**  
-7. **Which beams in our dataset are full power beams? Why might these beams be particularly useful in dense forests?**  
-8. **What kind of biases could be introduced if we only analyzed data from the coverage beams and ignored full power beams?**  
-9. **What factors could affect the quality of GEDI waveforms collected in the field?**  
-   *Hint: Consider atmospheric conditions, terrain, and vegetation density.*
-
----
-
-### **Section 3 (if applicable): Working with GEDI L2B Shots**
-10. **If you were a researcher studying above-ground biomass (AGB) in tropical forests, which type of GEDI data (coverage or full power beams) would you prioritize, and why?**  
-11. **What are some potential sources of error in GEDI-derived biophysical metrics? How might scientists validate GEDI data using ground-based measurements?**  
-12. **How does GEDI compare to airborne LiDAR systems in terms of resolution, coverage, and scientific applications?**  
-
-## **Questions for Understanding GEDI Mapping and Visualization**
-
-### **Section 3.1: Creating a GeoDataFrame**
-1. **Why do we convert latitude and longitude into a `shapely` geometry column? What advantages does this provide?**
-2. **How does filtering GEDI shots (e.g., selecting every 100th shot) impact the analysis? What trade-offs are we making?**
-3. **Why do we need to store GEDI shot numbers along with their coordinates? How does this help with data linking?**
-4. **What is the purpose of the `l2b_quality_flag`, and why might we want to filter shots based on it?**
-5. **What do you think would happen if we plotted the GEDI shots without converting them to a GeoDataFrame?**  
-   *Hint: Consider how pandas vs. GeoPandas handle spatial data.*
-
----
-
-### **Section 3.2: Visualizing GEDI Data on a Map**
-6. **What can we learn from overlaying GEDI shots on a basemap? How does this help interpret the data?**
-7. **Why do we add multiple layers to our map (e.g., Queensland boundary, QPRP plots, GEDI shots)?**
-8. **How does the spatial distribution of GEDI shots relate to the ISS orbit path? Why do they appear in a narrow strip?**
-9. **Why might some GEDI shots be located over water or non-forested areas?**
-10. **What are some potential sources of spatial error in GEDI data, and how could they affect our interpretation?**
-11. **If you wanted to analyze how GEDI data varies across different land cover types (e.g., forest vs. grassland), how would you modify the visualization?**
-12. **What additional datasets might be useful to combine with GEDI shots for a more complete ecological analysis?**  
-    *Hint: Think about climate, topography, or land cover data.*
-
----
-
-### **Interactive Analysis with Leafmap**
-13. **How does the ability to zoom in and inspect individual GEDI shots improve the analysis?**
-14. **What are some advantages of using an interactive map instead of a static plot for visualizing GEDI data?**
-15. **In the final visualization, why are some GEDI shots colored differently? How does this help in understanding data quality?**
-16. **What insights can you gain from comparing the GEDI shot locations to the QPRP plots? What patterns stand out?**
-17. **If you were conducting field validation, how would you use this map to plan your sampling locations?**
-
-1. **Axes & Scaling**
+### 4. Work with GEDI L2B data
    - What do you notice about the axes for elevation? How does this affect the way PAVD is displayed?
    - Why do the two plots have different elevation ranges? What does this tell us about the two shots?
    - If we had used the same y-axis limits for both graphs, what would change?
-
-2. **PAVD Distribution**
    - Which regions in the plot have the highest PAVD values? What does this mean in terms of canopy structure?
    - Is the PAVD distribution continuous or patchy? Why might this be the case?
    - How does the PAVD vary with elevation? Is there a pattern you can identify?
-
-3. **Data Representation**
    - The PAVD is color-coded using a gradient from light green to dark green. What does a darker color indicate?
    - Does the color scale influence how you interpret the data? If so, how?
    - If we used a different colormap (e.g., ‘Reds’ instead of ‘Greens’), how might that affect interpretation?
-
-4. **Scientific Interpretation**
    - What could cause one shot to have higher PAVD values at certain elevations than the other?
    - How do these profiles relate to forest structure? Can you infer anything about canopy height or density?
    - If you were collecting more data, what other variables would you want to include for a better understanding of PAVD?
 
-5. **Extra**: Using what you've learned, describe what you would expect to see in a PAVD profile for:
+**Extra**: Using what you've learned, describe what you would expect to see in a PAVD profile for:
    - A dense tropical rainforest
    - An open savanna
    - A recently logged forest
 
-
-
----
+### 5. Work with GEDI L2B Beam Transects
 - Do you notice any patterns in the canopy height across the transect?  
 - What could be the cause of the sharp peaks and valleys in the graph?  
 - Are there sections of the graph where canopy height is more consistent? What might this indicate about the underlying terrain or vegetation?  
-- The plot appears "messy" with scattered points—what might be causing this?  
+- The plot appears "messy" with scattered points. What might be causing this?  
 - Could some of these low canopy height values be from non-vegetated surfaces (e.g., roads, water bodies)?  
 - What kinds of errors or uncertainties might be present in GEDI measurements? How can filtering (e.g., using the quality flag) help?  
 - If you plotted a different GEDI beam, would you expect to see similar patterns, or would they be different? Why?  
-- How might the same transect look in a **dense tropical forest** versus an **open savanna**?  
-- If you had access to ground-based LiDAR data, how could you validate the accuracy of these canopy height measurements?  
+- How might the same transect look in a dense tropical forest versus an open savanna?  
+- If you had access to ground-based LiDAR data, how could you validate the accuracy of these canopy height measurements? 
 
 
+### 5.2 Plot of Beam Transects
+- How does the **Tandem-X DEM** compare to the **GEDI-derived elevation**? What could explain any differences?  
+- What does the **Canopy Top Elevation** represent, and how is it different from the other two variables?  
+- Where in the transect do you see the highest canopy elevations? What could explain these peaks?  
+- Do you notice areas where the Tandem-X DEM and GEDI-derived elevation diverge significantly? What might cause this discrepancy?  
+- Are there sections where canopy height is consistently low or missing? What could this indicate about the landscape?  
+- Looking at the x-axis, do you see any changes in terrain? Can you hypothesize what type of environment this transect might pass through (e.g., dense forest, open land, mountains)?  
+- The plot is "messy" - what do you think causes this?  
+- What role might terrain slope, dense vegetation, or surface water play in affecting these elevation measurements?  
+- Could there be errors in the data? If so, how would you detect and correct them?  
+- How might cloud cover or atmospheric conditions impact GEDI’s elevation and canopy height estimates?
+- If you analyzed a different GEDI beam, how might this graph look different?  
+- How do you expect elevation and canopy height patterns to change in a tropical rainforest compared to an open woodland?  
+- If you were to analyze multiple transects, what trends would you look for to study forest structure on a larger scale?  
 
-
-## **Questions for Analyzing PAVD, Elevation, and Canopy Top Elevation Over Queensland**
-
-### **1. Understanding the Visualization**
+### 6. Plot Profile Transects
 - What do the different lines and color intensities represent in this plot?
 - How does setting the same y-axis for both plots improve the comparison between the two transects?
 - What are the key differences between the left and right plots? What might be causing these differences?
-
-### **2. Comparing Ground Elevation and Canopy Top Elevation**
 - How does the difference between ground elevation and canopy top elevation inform us about the vegetation structure in a given area?
 - Where do you observe the largest difference between these two lines? What might that indicate?
 - How does the topography influence canopy height? Do you see patterns where forested areas follow terrain contours?
-
-### **3. Patterns in PAVD (Plant Area Volume Density)**
 - How does the distribution of PAVD align with canopy height and terrain changes?
 - Are there any regions where PAVD is high, but canopy height is low? What might cause this?
 - In which areas do you see more variation in PAVD, and how does this relate to different forest types?
-
-### **4. Interpreting the Spatial Context**
 - What landscape or ecological factors might explain the differences observed between these two transects?
-- If you were tasked with selecting sites for a field campaign, how would you use this visualization to guide your decision?
 - How might these results differ in different ecosystems, such as a tropical rainforest versus a savanna?
-
-### **5. Practical Applications**
 - How can this type of visualization be used in forest monitoring and conservation planning?
-- What additional datasets might be useful to combine with this analysis to get a more complete picture of forest structure?
 - How could changes in these plots over time help detect forest degradation, regrowth, or land-use changes?
 
+
+### 7. Spatial visualisation
+- Do you notice any correlations between canopy height and elevation? What landscapes show the highest canopy heights?
+- What variations in Plant Area Index (PAI) do you see along the transect? How might this relate to forest density?
+- Are there regions where canopy height is low, but PAI is high? What could explain this?
+- How could these maps help in identifying areas of deforestation or forest degradation?
+- How could this data be integrated into forest conservation or carbon storage assessments?
+- What are some potential errors or uncertainties in the GEDI data? How might atmospheric conditions or terrain features affect accuracy?
+- If you had access to higher-resolution airborne LiDAR, how might it improve upon GEDI’s spatial coverage and detail?
