@@ -1,11 +1,13 @@
 ## **Questions for better understanding GEDI Data**
-Solve these questions for yourself and passing the exam might become easier...
+### This file contains all questions from the notebook.
 
-### 3. Visualise a GEDI orbit
+Solve these questions for yourself in preparation for the exam 😉
+
+#### 3. Visualise a GEDI orbit
 
 - How does the spatial distribution of GEDI shots relate to the ISS orbit path? Why do they appear in a narrow strip?
 
-### 4. Work with GEDI L2B data
+#### 4. Work with GEDI L2B data
    - What do you notice about the axes for elevation? How does this affect the way PAVD is displayed?
    - Why do the two plots have different elevation ranges? What does this tell us about the two shots?
    - If we had used the same y-axis limits for both graphs, what would change?
@@ -24,7 +26,7 @@ Solve these questions for yourself and passing the exam might become easier...
    - An open savanna
    - A recently logged forest
 
-### 5. Work with GEDI L2B Beam Transects
+#### 5. Work with GEDI L2B Beam Transects
 - Do you notice any patterns in the canopy height across the transect?  
 - What could be the cause of the sharp peaks and valleys in the graph?  
 - Are there sections of the graph where canopy height is more consistent? What might this indicate about the underlying terrain or vegetation?  
@@ -36,7 +38,7 @@ Solve these questions for yourself and passing the exam might become easier...
 - If you had access to ground-based LiDAR data, how could you validate the accuracy of these canopy height measurements? 
 
 
-### 5.2 Plot of Beam Transects
+#### 5.2 Plot of Beam Transects
 - How does the **Tandem-X DEM** compare to the **GEDI-derived elevation**? What could explain any differences?  
 - What does the **Canopy Top Elevation** represent, and how is it different from the other two variables?  
 - Where in the transect do you see the highest canopy elevations? What could explain these peaks?  
@@ -51,7 +53,7 @@ Solve these questions for yourself and passing the exam might become easier...
 - How do you expect elevation and canopy height patterns to change in a tropical rainforest compared to an open woodland?  
 - If you were to analyze multiple transects, what trends would you look for to study forest structure on a larger scale?  
 
-### 6. Plot Profile Transects
+#### 6. Plot Profile Transects
 - What do the different lines and color intensities represent in this plot?
 - How does setting the same y-axis for both plots improve the comparison between the two transects?
 - What are the key differences between the left and right plots? What might be causing these differences?
@@ -67,7 +69,7 @@ Solve these questions for yourself and passing the exam might become easier...
 - How could changes in these plots over time help detect forest degradation, regrowth, or land-use changes?
 
 
-### 7. Spatial visualisation
+#### 7. Spatial visualisation
 - Do you notice any correlations between canopy height and elevation? What landscapes show the highest canopy heights?
 - What variations in Plant Area Index (PAI) do you see along the transect? How might this relate to forest density?
 - Are there regions where canopy height is low, but PAI is high? What could explain this?
