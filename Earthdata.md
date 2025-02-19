@@ -9,7 +9,7 @@ For the practical, you will only need your **Earthdata Login** credentials (user
 
 ---
 
-## Creating an Earthdata Account
+## Creating an Earthdata Account (Mandatory for the practical!)
 
 If you already have an Earthdata account, you can skip this section.
 
@@ -45,9 +45,9 @@ With Earthdata Search, you can:
 
 ---
 
-## Searching and Downloading GEDI Data
+## Searching and Downloading GEDI Data (Optional for exploration)
 
-Now that you have an account and understand the basics, let's explore how to search and download data for your **region of interest (ROI)**.
+Now that you have an account and understand the basics, you can explore how to search and download data for your own **region of interest (ROI)**. Note that this is **not required for the practical** but only for your own exploration after the practical or if you want an extra challenge!
 
 1. Go to [Earthdata Search](https://search.earthdata.nasa.gov/).  
 2. In the **"Search for collections or topics"** search bar, enter **GEDI**, then click on **Instrument → GEDI**.
