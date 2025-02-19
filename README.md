@@ -24,6 +24,9 @@ This document provides a **step-by-step guide** on:
 ### 📌 [Colab.md](https://github.com/gdeslo/GEDI_course/blob/notebook/colab.md)  
 This guide includes **tips and tricks** for using **Google Colab**, the recommended environment for this practical.  
 
+### 📌 [Questions.md](https://github.com/gdeslo/GEDI_course/blob/notebook/Questions.md)  
+This file contains **all the questions** from the Jupyter notebook in one place, making it easier to review and answer them.  
+
 ---
 
 ## How to Get Started  
@@ -39,7 +42,9 @@ This guide includes **tips and tricks** for using **Google Colab**, the recommen
 
 3. **Follow the notebook instructions**  
    - Read the information, execute the code, and try to solve the **🧐 Questions to Think About**.  
+   - If you want to see all questions in one place, check out **[Questions.md](https://github.com/gdeslo/GEDI_course/blob/notebook/Questions.md)**.  
 
 ---
 
 Good luck! 🍀  
+
