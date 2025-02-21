@@ -42,7 +42,14 @@ This file contains **all the questions** from the Jupyter notebook in one place,
      ```
 
 3. **Follow the L2B notebook instructions**  
-   - Launch the **[L2B notebook](https://github.com/gdeslo/GEDI_course/blob/main/04_GEDI_L2B_notebook.ipynb)** in **Google Colab**.  
+   - Launch the **[L2B notebook](https://github.com/gdeslo/GEDI_course/blob/main/04_GEDI_L2B_notebook.ipynb)** in **Google Colab**.
+      - Google Colab may show the following error. Simply click "Authorize."
+         ![image](https://github.com/user-attachments/assets/53f51cd8-d93b-43e2-9648-d3b3b4e08100)
+      - You will now see the error below. Click "OK."
+         ![image](https://github.com/user-attachments/assets/f05b4fd9-7e98-44d5-a842-83e566103bfe)
+      - Now click on the link indicated by the arrow below.
+         ![image](https://github.com/user-attachments/assets/0cdb312d-1de1-46e9-97d5-43ce17bb55f0)
+      - The L2B notebook should now be open in Google Colab, and you can proceed. If you encounter any issues, feel free to ask the assistant for help.
    - Read the information, execute the code, and try to solve the **🧐 Questions to Think About**.  
    - If you want to see all questions in one place, check out **[Questions.md](https://github.com/gdeslo/GEDI_course/blob/main/05_Questions.md)**.  
 
