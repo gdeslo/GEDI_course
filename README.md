@@ -33,7 +33,7 @@ This file contains **all the questions** from the Jupyter notebook in one place,
 ## How to Get Started  
 
 1. **Open the notebooks**  
-   - The notebooks are marked in order (0X_notebookname.file). If you follow them one by one, everything should make sense.
+   - The notebooks are marked in order (0X_notebookname.file). With this currect README file being the first. If you follow all files one by one, everything should make sense.
 
 2. **Set up your data**  
    - Save the **[DATA folder](https://github.com/gdeslo/GEDI_course/tree/main/DATA)** to your **Google Drive** under:  
