@@ -84,7 +84,7 @@ Now that you have an account and understand the basics, you can explore how to s
 
    ![image](https://github.com/user-attachments/assets/76b0eaee-a681-4093-b9f4-05c372763a50)  
 
-8. This will take you to a download page. Do **not** click Download. Instead, **copy the link** of the granule and update the download link in the [Jupyter Notebook of the practical](https://github.com/gdeslo/GEDI_course/blob/notebook/GEDI_OZ_L2B_V2.ipynb).
+8. This will take you to a download page. Do **not** click Download. Instead, **copy the link** of the granule and update the download link in the [Jupyter Notebook of the practical](https://github.com/gdeslo/GEDI_course/blob/main/04_GEDI_L2B_notebook.ipynb).
 
 
    ![image](https://github.com/user-attachments/assets/7352700b-04fa-468a-ae5f-ef5abdedfa96)  
