@@ -26,7 +26,7 @@ To create an account:
 
 After registering, return to [Earthdata Login](https://urs.earthdata.nasa.gov/) and log in with your new account.
 
-Once logged in, you will see the following page:
+Once logged in, click on this link [Earthdata Search](https://search.earthdata.nasa.gov/), you will see the following page:
 
 
 ![image](https://github.com/user-attachments/assets/dab757f9-84ed-4f81-b8f5-c86b15715109)
