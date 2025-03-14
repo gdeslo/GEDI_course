@@ -77,3 +77,4 @@ Solve these questions for yourself in preparation for the exam 😉
 - How could this data be integrated into forest conservation or carbon storage assessments?
 - What are some potential errors or uncertainties in the GEDI data? How might atmospheric conditions or terrain features affect accuracy?
 - If you had access to higher-resolution airborne LiDAR, how might it improve upon GEDI’s spatial coverage and detail?
+- How can the QPRP plots be integrated with the GEDI data later on? For example, how field plots can be used to calibrate GEDI biomass models, or as validation data for wall-to-wall GEDI-maps (by integration with Sentinel-1/2/ Landsat/...)?
